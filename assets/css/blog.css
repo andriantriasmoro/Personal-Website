@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand";
+  background-color: rgb(247, 247, 247) !important;
+}
+
+nav {
+  background-color: rgba(85, 84, 84, 0.7);
+  height: 65px;
+}
+
+nav.scroll {
+  background-color: #343A40;
+  transition: 1s;
+}
+
+nav.scroll .container .navbar-brand {
+  color: lightsalmon;
+  font-size: 24px;
+  transition: 1s;
+}
+
+.navbar a {
+  margin-right: 10px;
+  font-weight: 400;
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.nav-item:hover {
+  background-color: lightsalmon;
+  transition: 0.2s;
+  color: white !important;
+}
+
+.active {
+  border-bottom: 2px solid salmon;
+}
+
+.bg {
+  background: url("../img/bg-blog.jpg") no-repeat center center;
+  position: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 470px;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.9;
+}
+
+.jumbotron {
+  height: 470px;
+  background: transparent !important;
+  color: white;
+}
+
+.jumbotron h1 {
+  font-family: "Bebas Neue";
+  color: #66fcfc;
+  font-size: 5em;
+  letter-spacing: 2px;
+  text-shadow: -3px 3px white;
+  margin-top: 50px;
+  z-index: 2 !important;
+}
+
+.jumbotron p {
+  color: white;
+  width: 50%;
+  font-size: 1em;
+  font-family: "Open Sans";
+}
+
+.article {
+  padding: 5px 10px;
+  margin-top: -20px;
+}
+
+.card {
+  padding: 30px;
+  margin: 8px;
+}
+
+.card img {
+  margin: 5px 10px;
+}
+
+.card h2,
+.card h4 {
+  padding-left: 10px;
+  font-family: "Open Sans";
+}
+
+.card p {
+  font-size: "Roboto";
+  font-size: 1em;
+  padding: 10px;
+  text-align: justify;
+}
+
+.indent {
+  text-indent: 40px;
+}
+
+.card ul li,
+.card ol li {
+  margin-left: 30px;
+}
+
+.card .author {
+  padding: 5px 10px 0;
+  font-family: "Open Sans";
+}
+
+.button {
+  background-color: lightsalmon !important;
+  padding: 20px;
+  width: fit-content;
+  margin-left: 83%;
+  border-radius: 5px;
+  color: white;
+}
+
+.button a,
+.btn-categories a,
+.button-search a {
+  color: white;
+  text-decoration: none;
+}
+
+.button a:hover,
+.btn-categories a:hover,
+.button-search a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.card .button:hover,
+.btn-categories:hover,
+.button-search:hover {
+  background-color: rgb(206, 129, 98) !important;
+  transition: .7s;
+}
+
+.btn-categories,
+.button-search {
+  background-color: #ffa07a;
+  padding: 6px;
+  width: fit-content;
+  color: white;
+  border-radius: 5px;
+  margin-left: 8px;
+  margin-top: 5px;
+}
+
+.subtitle {
+  border: 5px solid salmon;
+  width: 90px;
+  margin: 20px auto !important;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.col-lg-4 h2 {
+  text-align: center;
+}
+
+.col-lg-4 img {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.col-lg-4 p {
+  font-size: "Roboto";
+  font-size: 0.9em;
+  text-indent: 0;
+}
+
+.col-lg-4 .button {
+  padding: 8px;
+  background-color: lightsalmon !important;
+  width: fit-content;
+  border-radius: 5px;
+  color: white;
+  margin-left: 70%;
+  margin-top: -25px;
+}
+
+.col-lg-4 .author {
+  font-size: 13px;
+}
+
+.col-lg-4 div.btn-categories {
+  display: inline-block;
+  padding: 8px;
+  margin: 5px 3px;
+}
+
+.personal {
+  width: 200px !important;
+  margin: 18px auto !important;
+  box-shadow: 0 0 0 5px white, 0 0 0 10px rgb(0, 102, 255) !important;
+}
+
+.social-media li {
+  display: inline-block;
+  margin: 0 7px;
+}
+
+.search input,
+.button-search {
+  display: inline-block;
+}
+
+.form-control {
+  width: 72% !important;
+}
+
+.search {
+  margin-top: 8px;
+}
+
+.footer {
+  margin-top: 5px;
+  background-color: #343A40 !important;
+  color: #dd8360;
+  font-weight: bold;
+  font-family: "Roboto";
+  font-size: 18px;
+  transition: 1s;
+  height: 70px;
+}
+
+.footer p {
+  line-height: 70px;
+  font-family: "Quicksand";
+  font-weight: 500;
+  margin: 0;
+
+}
+
+@media (max-width: 800px) {
+  .jumbotron {
+    height: 400px;
+    background-position: 0 0;
+  }
+
+  .jumbotron h1 {
+    font-size: 3em;
+    margin-top: 50px;
+  }
+
+  .jumbotron p {
+    font-size: 1em;
+  }
+
+  .article {
+    margin-top: 80px;
+  }
+}
+
+@media (min-width: 800px) {
+  .jumbotron {
+    height: 470px;
+  }
+
+  .article {
+    margin-top: -25px;
+  }
+}

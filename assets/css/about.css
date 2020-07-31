@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+* {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: rgba(85, 84, 84, 0.7);
+  height: 65px;
+}
+
+nav.bg-light {
+  background-color: #343A40;
+  transition: 1s;
+}
+
+nav.white .container .navbar-brand {
+  color: lightsalmon;
+  font-size: 24px;
+  transition: 1s;
+}
+
+.navbar a {
+  margin-right: 10px;
+  font-weight: 400;
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.nav-item:hover {
+  background-color: lightsalmon;
+  transition: 0.2s;
+  color: white !important;
+}
+
+.active {
+  border-bottom: 2px solid salmon;
+}
+
+.jumbotron {
+  height: 750px;
+  background: #fff !important;
+}
+
+.jumbotron img {
+  width: 200px;
+  border-radius: 5px;
+  box-shadow: 0 0 0 5px white, 0 0 0 10px #007aff;
+}
+
+.jumbotron h2 {
+  margin-top: 10px;
+}
+
+.jumbotron hr {
+  border: 2px solid orange;
+  border-radius: 5px;
+}
+
+.jumbotron p {
+  font-size: 24px;
+}
+
+.jumbotron .button {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  float: left;
+  padding: 15px;
+  border: 1px solid orange;
+  margin-right: 5px;
+  border-radius: 15px;
+  text-align: center;
+  font-weight: 500;
+  color: orange;
+  transition: 0.7s;
+}
+
+.jumbotron .button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.jumbotron .button {
+  background-color: orange;
+}
+
+.jumbotron .button:hover {
+  background-color: rgb(180, 119, 4);
+  border: 1px solid rgb(180, 119, 4);
+  font-weight: 500;
+  color: white;
+}
+
+table p {
+  font-size: 14px !important;
+}
+
+#circleBar {
+  height: 660px;
+  background-image: url('../img/background.jpg');
+  background-size: cover;
+  width: 100%;
+  padding: 50px 30px;
+  text-align: center;
+}
+
+#circleBar .row {
+  height: 350px;
+  position: relative;
+  top: 70%;
+}
+
+#circleBar .container {
+  background-color: white;
+  border-radius: 5px;
+}
+
+#circleBar h1 {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-shadow: -3px 1px 2px rgb(202, 133, 3);
+  font-family: "Bebas Neue";
+  font-size: 82px;
+  letter-spacing: 2px;
+  color: orange;
+}
+
+.col-xl-3 {
+  padding: 40px;
+  background-color: white;
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 2px;
+
+}
+
+.circleBar .round {
+  min-height: 255px;
+  margin-top: 30px;
+  position: relative;
+}
+
+.circleBar .round strong {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  transform: translate(-50px);
+  font-size: 80px;
+  font-weight: 100;
+}
+
+.footer {
+  background-color: #343A40 !important;
+  color: #dd8360;
+  font-weight: bold;
+  font-family: "Roboto";
+  font-size: 18px;
+  transition: 1s;
+  height: 70px;
+}
+
+.footer p {
+  line-height: 70px;
+  font-family: "Quicksand";
+  font-weight: 500;
+  margin: 0;
+
+}
+
+
+@media screen and (max-width: 800px) {
+
+  .jumbotron h2,
+  .jumbotron img {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .jumbotron p {
+    font-size: 13px;
+  }
+
+  .jumbotron .button {
+    margin-right: 20px;
+    padding: 10px;
+  }
+
+  .jumbotron {
+    height: 900px;
+  }
+
+  #circleBar {
+    height: 1550px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .jumbotron p {
+    font-size: 17px;
+  }
+
+  .jumbotron h2 {
+    margin-top: 30px;
+  }
+
+  .jumbotron {
+    height: 660px;
+  }
+
+  .jumbotron .button {
+    margin-right: 20px;
+  }
+}

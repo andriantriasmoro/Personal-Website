@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+* {
+  font-family: "Quicksand", sans-serif;
+}
+
+nav {
+  background-color: rgba(85, 84, 84, 0.7);
+  height: 65px;
+}
+
+nav.scroll {
+  background-color: #343A40;
+  transition: 1s;
+}
+
+nav.background nav.container {
+  background-color: #343A40 !important;
+}
+
+nav.scroll .container .navbar-brand {
+  color: lightsalmon;
+  font-size: 24px;
+  transition: 1s;
+}
+
+.navbar a {
+  margin-right: 10px;
+  font-weight: 400;
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.nav-item:hover {
+  background-color: lightsalmon;
+  transition: 0.2s;
+  color: white !important;
+}
+
+.jumbotron {
+  margin-top: -80px;
+  height: 880px;
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.jumbotron h1 {
+  font-family: "Bebas Neue";
+  letter-spacing: 3px;
+  margin-top: 200px;
+  font-size: 96px;
+  width: 80%;
+  font-weight: bold;
+  color: white;
+  text-shadow: -1px 0px 1px white;
+}
+
+.jumbotron p {
+  color: white;
+  font-size: 32px;
+  width: 80%;
+}
+
+.jumbotron hr {
+  border: 3px solid orange;
+  border-radius: 3px;
+  margin-left: -5px;
+  width: 40%;
+}
+
+.social-media {
+  position: relative;
+  margin-top: -130px;
+  z-index: 2;
+}
+
+.social-media ul li {
+  display: inline-block;
+  margin-right: 30px;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.social-media ul li i {
+  padding: 20px;
+  color: orange;
+  border-radius: 50%;
+  border: 1px solid orange;
+}
+
+.social-media li:hover i {
+  position: relative;
+  top: -20px;
+  background-color: orange;
+  color: aliceblue;
+  transition: 2s;
+}
+
+.content {
+  display: none;
+  color: white;
+  font-weight: 700;
+  transition: 4s ease;
+  font-size: 13px;
+}
+
+.social-media li:hover .content {
+  display: block;
+  position: absolute;
+  bottom: 10px;
+  transition: 2s ease;
+}
+
+.active {
+  border-bottom: 2px solid salmon;
+}
+
+.ketik {
+  font-weight: 800;
+}
+
+.ketik::after {
+  content: "|";
+  font-weight: 300;
+  animation: blink 3s infinite;
+}
+
+.personal-profile p {
+  font-size: 18px;
+  width: 40%;
+  text-align: justify;
+}
+
+.button {
+  font-family: "Roboto", sans-serif;
+  padding: 15px;
+  border: 1px solid orange;
+  border-radius: 15px;
+  text-align: center;
+  font-weight: 500;
+  color: orange;
+  background-color: orange;
+  width: 10%;
+  transition: 0.4s;
+  margin-top: 10px;
+  margin-left: -5px;
+  transition: 0.7s;
+}
+
+.button a {
+  color: white;
+  text-decoration: none;
+}
+
+.button:hover,
+.button a:hover {
+  background-color: rgb(180, 119, 4);
+  border: 1px solid rgb(180, 119, 4);
+  text-decoration: none;
+  color: white;
+}
+
+.footer {
+  margin-top: -20px;
+  background-color: #343A40 !important;
+  color: #dd8360;
+  font-weight: bold;
+  font-family: "Roboto";
+  font-size: 18px;
+  transition: 1s;
+  height: 70px;
+}
+
+.footer p {
+  line-height: 70px;
+  font-family: "Quicksand";
+  font-weight: 500;
+  margin: 0;
+
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media(max-width:800px) {
+  .personal-profile p {
+    font-size: 16px;
+  }
+
+  .jumbotron {
+    height: 1000px;
+  }
+
+  .button {
+    width: 25%;
+  }
+}

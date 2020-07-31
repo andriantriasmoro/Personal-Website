@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Quicksand";
+    background-color: rgb(247, 247, 247) !important;
+    height: 600px;
+    background-image: url(../img/contact.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav {
+    background-color: rgba(85, 84, 84, 0.7);
+    height: 65px;
+}
+
+nav.white {
+    background-color: #343A40;
+    transition: 1s;
+}
+
+nav.white .container .navbar-brand {
+    color: lightsalmon;
+    font-size: 24px;
+    transition: 1s;
+}
+
+.navbar a {
+    margin-right: 10px;
+    font-weight: 400;
+    font-family: "Quicksand", sans-serif;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.nav-item:hover {
+    background-color: lightsalmon;
+    transition: 0.2s;
+    color: white !important;
+}
+
+.active {
+    border-bottom: 2px solid salmon;
+}
+
+main {
+    height: 750px;
+}
+
+.form {
+    margin-top: 10%;
+}
+
+.form .container {
+    height: 670px;
+    background-color: white;
+    padding: 35px;
+    max-width: 750px;
+    box-shadow: 5px 3px 20px 10px #272727;
+    border-radius: 5px;
+}
+
+.form .container h1 {
+    font-family: 'Bebas Neue';
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 5em;
+    background: linear-gradient(to right, #240b36, #c31432);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.form hr {
+    width: 200px;
+    margin: 20px auto;
+    border: 7px solid #790c1e;
+    border-radius: 10px;
+}
+
+.form .row {
+    margin: 20px 0;
+    position: relative;
+}
+
+.form input {
+    margin: 25px 0;
+    font-size: 15px;
+    display: block;
+    width: 100%;
+    border-width: 0 0 2px 0;
+    border-color: #240b36;
+}
+
+.form input.message {
+    margin: 20px 0;
+    font-size: 15px;
+    display: block;
+    width: 100%;
+    border-width: 0 0 2px 0;
+    border-color: #240b36;
+    height: 105px;
+}
+
+.form input:focus {
+    outline: none;
+    border-width: 0 0 2px 0;
+    border-color: #c31432;
+}
+
+.form input:focus+label,
+.form input:valid+label {
+    transform: translateY(-20px) !important;
+    font-size: 16px;
+    color: #c31432;
+}
+
+.form input.message:focus+label,
+.form input.message:valid+label {
+    transform: translateY(-20px) !important;
+    font-size: 16px;
+    color: #c31432;
+}
+
+.form label {
+    color: #240b36;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 27px;
+    left: 15px;
+    font-size: 18px;
+    line-height: 12px;
+    font-weight: 600;
+    transition: .6s ease;
+    font-family: "Quicksand";
+}
+
+.form label.message {
+    bottom: 65px !important;
+}
+
+.form .warning-name,
+.form .warning-email,
+.form .warning-phone,
+.form .warning-message {
+    font-size: 14px;
+    position: absolute;
+    bottom: -17px;
+    color: #c31432;
+}
+
+.submit {
+    margin-top: 30px;
+    margin-left: 80% !important;
+    background: linear-gradient(225deg, #240b36, #c31432);
+    padding: 15px;
+    color: white;
+    border: white;
+    font-family: "Roboto";
+    width: fit-content !important;
+    border-radius: 5px;
+    font-weight: 400;
+}
+
+.submit:hover {
+    box-shadow: 0px 0px 10px 3px #240b36;
+    background: linear-gradient(225deg, #0c0300, #aa1002);
+}
+
+.footer {
+    margin-top: 5px;
+    background-color: #343A40 !important;
+    color: #dd8360;
+    font-weight: bold;
+    font-family: "Roboto";
+    font-size: 18px;
+    transition: 1s;
+    height: 70px;
+}
+
+.footer p {
+    line-height: 70px;
+    font-family: "Quicksand";
+    font-weight: 500;
+    margin: 0;
+
+}
+
+@media (max-width:800px) {
+    main {
+        height: 720px;
+    }
+
+    .form .container {
+        height: 720px;
+    }
+}
